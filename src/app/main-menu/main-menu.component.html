@@ -1,0 +1,30 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" (click)="isCollapsed = !isCollapsed" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+            <a class="navbar-brand" href="#">
+                <img src="../../assets/images/logo.png" alt="logo" />
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" [collapse]=isCollapsed>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a routerLink="/dashboard">Dashboard</a></li>
+                <li><a routerLink="/account">Account</a></li>
+                <li class="dropdown" dropdown>
+                    <a href="#" dropdownToggle class="dropdown-toggle">Profile <span class="caret"></span></a>
+                    <ul *dropdownMenu class="dropdown-menu" role="menu">
+                        <li role="menuitem"><a class="dropdown-item" href="#">Settings</a></li>
+                        <li class="divider dropdown-divider"></li>
+                        <li role="menuitem"><a class="dropdown-item" routerLink="/login">Logout</a></li>
+                    </ul>
+                </li>
+                <li class="icon-menuitem"><a href="tel:800 344 3434"><i class="fa fa-phone"></i> &nbsp;&nbsp;&nbsp;&nbsp; 800 344 3434</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

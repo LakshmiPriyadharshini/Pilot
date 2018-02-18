@@ -1,0 +1,26 @@
+@import '~@swimlane/ngx-datatable/release/index.css';
+@import '~@swimlane/ngx-datatable/release/themes/material.css';
+@import '~@swimlane/ngx-datatable/release/assets/icons.css';
+
+.flat-butt {
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 6px;
+    font-family: "Lato", sans-serif;
+    font-size: 16.5px;
+    padding: 12px 20px;
+    border: 0;
+    background: #34495E;
+    color: #FFF;
+    cursor: pointer;
+    outline: 0;
+  }
+  .flat-butt:hover {
+    background: #005580;
+  }
+  .flat-primary-butt {
+    background: #8bb8f3;
+  }
+  .flat-primary-butt:hover {
+    background: #a1ccf0;
+  }

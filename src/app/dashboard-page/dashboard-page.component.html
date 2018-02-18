@@ -1,0 +1,33 @@
+
+<div class="pull-right" style="margin-top:80px;margin-left:50px;margin-right:50px;">
+    <button href="#"  class="flat-butt flat-primary-butt" routerLink="/account">
+        New Quote <span class="glyphicon glyphicon-chevron-right"></span>
+    </button>
+</div>
+<div style="margin-top:140px;margin-left:50px;margin-right:50px;">
+                <ngx-datatable
+                class="material"
+                [rows]="rows"
+                [loadingIndicator]="loadingIndicator"               
+                [columnMode]="'force'"
+                [headerHeight]="50"
+                [footerHeight]="50"
+                [rowHeight]="'auto'"
+                [reorderable]="reorderable">
+                <ngx-datatable-column name="id" [width]="300"></ngx-datatable-column>
+                <ngx-datatable-column name="policyNumber"></ngx-datatable-column>
+                <ngx-datatable-column name="content"></ngx-datatable-column>
+                <ngx-datatable-column name="status" [width]="300" ></ngx-datatable-column>
+                <ngx-datatable-column name="effectiveDate" [width]="300"></ngx-datatable-column>
+                <ngx-datatable-column name="expiryDate" [width]="300"></ngx-datatable-column>
+              </ngx-datatable>
+</div>
+<div class="btn-group" dropdown style="margin-top:70px;margin-left:50px;margin-right:50px;">
+    <button dropdownToggle type="button" class="flat-butt flat-primary-butt dropdown-toggle">
+      Button dropdown <span class="caret"></span>
+    </button>
+    <ul *dropdownMenu class="dropdown-menu" role="menu">
+      <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+    </ul>
+  </div>
+
